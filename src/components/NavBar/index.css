@@ -1,0 +1,68 @@
+/* --- 1. ESTILOS MOBILE (Por defecto) --- */
+
+.navbar {
+  background-color: #D1E3FF;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-bottom: 2px solid #b8c9e8;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.logo-img {
+  height: 45px;
+  width: auto;
+  display: block;
+}
+
+.navbar-actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+/* OCULTAR VENTAS EN MOBILE */
+.btn-ventas {
+  display: none;
+}
+
+/* --- 2. ESTILOS DESKTOP (min-width: 768px) --- */
+
+@media (min-width: 768px) {
+  .navbar-container {
+    padding: 0 10%;
+  }
+
+  /* MOSTRAR VENTAS SOLO EN WEB */
+  .btn-ventas {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #333;
+    background-color: #ffffff;
+    border: 1px solid #999;
+    border-radius: 6px;
+    padding: 0 24px;
+    height: 38px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+  }
+
+  .btn-ventas:hover {
+    background-color: #f0f0f0;
+  }
+
+  .logo-img {
+    height: 55px;
+  }
+}

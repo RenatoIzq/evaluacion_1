@@ -1,0 +1,292 @@
+/* =============================================
+   HOME PAGE — Mobile First
+   ============================================= */
+
+.home-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* ── Placeholder genérico de imagen ── */
+.image-placeholder {
+  background-color: #cccccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-placeholder::after {
+  content: "";
+  display: block;
+  width: 64px;
+  height: 64px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23aaa'%3E%3Cpath d='M21 19V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2zM8.5 13.5l2.5 3 3.5-4.5 4.5 6H5l3.5-4.5z'/%3E%3C/svg%3E") center/contain no-repeat;
+}
+
+/* =============================================
+   HERO — Mobile
+   ============================================= */
+.hero-section {
+  background-color: #fef9e7;
+  padding: 32px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* En mobile el slider del hero está oculto (se usa el bloque separado) */
+.hero-slider-desktop {
+  display: none;
+}
+
+/* Bloque gris con slider, solo visible en mobile */
+.hero-slider-mobile {
+  display: block;
+  width: 100%;
+  background-color: #e0e0e0;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.hero-title {
+  font-family: var(--font-title);
+  font-size: 1.6rem;
+  color: #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-align: center;
+}
+
+.hero-icon {
+  font-size: 1.8rem;
+}
+
+.hero-body {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.75;
+}
+
+.hero-cta {
+  margin-top: 8px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Imagen full-width entre hero y feature — reemplazada por hero-slider-mobile */
+.mobile-hero-image {
+  display: none;
+}
+
+/* =============================================
+   FEATURE — Mobile
+   ============================================= */
+.feature-section {
+  background-color: #e8f5e9;
+  padding: 32px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.feature-title {
+  font-family: var(--font-title);
+  font-size: 1.2rem;
+  color: #222;
+  margin-bottom: 12px;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.feature-body {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.75;
+}
+
+.feature-image-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.feature-image {
+  width: 100%;
+  height: 200px;
+  border-radius: 8px;
+  /* Sombra en caja de imagen */
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.feature-stars {
+  display: flex;
+  gap: 4px;
+  font-size: 1.4rem;
+  color: #f5a623;
+}
+
+/* =============================================
+   PROPUESTAS DE VALOR — Mobile
+   ============================================= */
+.values-section {
+  padding: 40px 20px;
+  background-color: #f5f7fa;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.values-title {
+  font-family: var(--font-title);
+  font-size: 1.4rem;
+  color: #222;
+  text-align: center;
+}
+
+.values-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* =============================================
+   TESTIMONIOS — Mobile
+   ============================================= */
+.testimonials-section {
+  padding: 40px 20px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.testimonials-title {
+  font-family: var(--font-title);
+  font-size: 1.4rem;
+  color: #222;
+  text-align: center;
+}
+
+.testimonials-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* =============================================
+   DESKTOP — min-width: 768px
+   ============================================= */
+@media (min-width: 768px) {
+
+  /* ── Hero ── */
+  .hero-section {
+    flex-direction: row;
+    align-items: stretch;
+    padding: 0;
+    min-height: 380px;
+  }
+
+  /* Slider aparece dentro del hero como columna izquierda */
+  .hero-slider-desktop {
+    display: flex;
+    flex: 1;
+    order: -1;
+  }
+
+  .hero-slider-desktop > * {
+    width: 100%;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  /* Slider mobile se oculta en desktop */
+  .hero-slider-mobile {
+    display: none;
+  }
+
+  .hero-content {
+    flex: 1;
+    padding: 48px 40px;
+    justify-content: center;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+    justify-content: flex-start;
+    
+  }
+
+  .hero-cta {
+    justify-content: flex-start;
+  }
+
+  /* ── Feature ── */
+  .feature-section {
+    flex-direction: row;
+    align-items: stretch;
+    padding: 0;
+    min-height: 380px;
+  }
+
+  .feature-content {
+    flex: 1;
+    padding: 48px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .feature-title {
+    font-size: 1.5rem;
+    text-align: left;
+  }
+
+  .feature-image-wrap {
+    flex: 1;
+    padding: 32px 40px;
+    justify-content: center;
+  }
+
+  .feature-image {
+    height: 260px;
+  }
+
+  /* ── Propuestas de valor ── */
+  .values-section {
+    padding: 56px 5%;
+  }
+
+  .values-grid {
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .values-grid > * {
+    flex: 1;
+  }
+
+  /* ── Testimonios ── */
+  .testimonials-section {
+    padding: 56px 5%;
+  }
+
+  .testimonials-grid {
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .testimonials-grid > * {
+    flex: 1;
+  }
+}
