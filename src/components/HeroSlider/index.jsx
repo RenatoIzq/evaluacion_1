@@ -1,10 +1,15 @@
 import { useState, useEffect } from "react";
+import img1 from "../../assets/imagens/Screenshot 2026-04-30 182633.png";
+import img2 from "../../assets/imagens/Screenshot 2026-04-30 182721.png";
+import img3 from "../../assets/imagens/Screenshot_1.png";
+import img4 from "../../assets/imagens/Screenshot_2.png";
 import "./index.css";
 
 const slides = [
-  { id: 1, bg: "#d6e4f0", label: "Colección Primavera" },
-  { id: 2, bg: "#d6f0e0", label: "Colección Verano"    },
-  { id: 3, bg: "#f0e6d6", label: "Colección Otoño"     },
+  { id: 1, img: img1, label: "Tazas" },
+  { id: 2, img: img2, label: "Platos para salsa" },
+  { id: 3, img: img3, label: "Set Tucan" },
+  { id: 4, img: img4, label: "Set platos bajos azul" },
 ];
 
 /**
@@ -14,11 +19,11 @@ const slides = [
 export const HeroSlider = () => {
   const [current, setCurrent] = useState(0);
 
-  // Avance automático cada 3.5 s
+  // Avance automático cada 2.5 s
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrent((prev) => (prev + 1) % slides.length);
-    }, 3500);
+    }, 2500);
     return () => clearInterval(timer);
   }, []);
 
@@ -35,10 +40,12 @@ export const HeroSlider = () => {
           <div
             key={slide.id}
             className="slider__slide"
-            style={{ backgroundColor: slide.bg }}
           >
-            {/* Placeholder de imagen */}
-            <div className="slider__img-placeholder" aria-hidden="true" />
+            <img
+              src={slide.img}
+              alt={slide.label}
+              className="slider__img"
+            />
             <span className="slider__label">{slide.label}</span>
           </div>
         ))}

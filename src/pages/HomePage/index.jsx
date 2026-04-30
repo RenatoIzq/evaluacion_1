@@ -5,6 +5,7 @@ import { CommentsCard } from '../../components/CommentsCard';
 import { ValueCard } from '../../components/ValueCard';
 import { HeroSlider } from '../../components/HeroSlider';
 import { testimonials, valueProposals } from '../../data/dummy.js';
+import screenshot3 from '../../assets/imagens/Screenshot_3.png';
 import './index.css';
 
 const HomePage = () => {
@@ -50,7 +51,11 @@ const HomePage = () => {
         </div>
 
         <div className="feature-image-wrap">
-          <div className="feature-image image-placeholder" aria-hidden="true" />
+          <img
+            src={screenshot3}
+            alt="Piezas de cerámica artesanal Condecerámica"
+            className="feature-image"
+          />
           <div className="feature-stars" aria-label="Valoración 5 estrellas">
             <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
           </div>
@@ -82,6 +87,7 @@ const HomePage = () => {
               name={item.name}
               role={item.role}
               comment={item.comment}
+              avatar={item.avatar}
             />
           ))}
         </div>
