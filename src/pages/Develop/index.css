@@ -1,0 +1,138 @@
+.dev-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.dev-main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 20px;
+  background-color: #f5f7fa;
+}
+
+/* Tarjeta de perfil */
+.dev-card {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 16px;
+  padding: 40px 32px;
+  max-width: 480px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  /* Sombra de caja */
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  /* Animación de entrada */
+  animation: fadeSlideUp 0.5s ease both;
+}
+
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Avatar */
+.dev-avatar {
+  width: 96px;
+  height: 96px;
+  background-color: #eeeeee;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #d1e3ff;
+}
+
+.dev-avatar svg {
+  width: 56px;
+  height: 56px;
+}
+
+/* Nombre */
+.dev-name {
+  font-family: var(--font-title);
+  font-size: 1.6rem;
+  color: #222;
+  text-align: center;
+}
+
+/* Tabla de datos */
+.dev-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  padding: 16px 0;
+}
+
+.dev-info__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.dev-info__label {
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  flex-shrink: 0;
+}
+
+.dev-info__value {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: #333;
+  text-align: right;
+}
+
+.dev-info__link {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: #4a90e2;
+  text-decoration: underline;
+  text-align: right;
+}
+
+
+/* Botón GitHub */
+.dev-github-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #24292e;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 24px;
+  border-radius: 8px;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.dev-github-btn svg {
+  width: 18px;
+  height: 18px;
+}
+
+.dev-github-btn:hover {
+  background-color: #444d56;
+  transform: translateY(-2px);
+}
