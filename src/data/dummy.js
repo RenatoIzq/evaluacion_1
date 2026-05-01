@@ -47,7 +47,7 @@ export const valueProposals = [
     icon: ceramica,
     title: "Apta para uso diario",
     description:
-      "Nuestras piezas soportan microondas, horno y lavavajillas. Están hechas para vivir en tu cocina, no guardadas en una vitrina.",
+      "Nuestras piezas soportan microondas, horno y lavavajillas. Están hechas para ser utilizadas diariamente, no para estar guardadas en una vitrina.",
   },
   {
     id: 2,

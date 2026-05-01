@@ -18,14 +18,14 @@ const HomePage = () => {
             Cerámica para el día a día
           </h1>
           <p className="hero-body">
-            Platos, tazas, macetas y más, hechos a mano con arcilla del Maule.
+            Platos, tazas, macetas y más, hechos a mano con arcilla nacional.
             Cada pieza está pensada para usarse, no solo para verse: resistente,
             funcional y con el carácter único que solo da el trabajo artesanal.
           </p>
           <p className="hero-body">
             Trabajamos en pequeños lotes para cuidar cada detalle. Desde el
             amasado de la arcilla hasta el esmaltado final, todo ocurre en
-            nuestro taller en el Maule, con materiales nacionales y sin
+            nuestro taller en Talca, con materiales nacionales y sin
             intermediarios.
           </p>
           <div className="hero-cta">
