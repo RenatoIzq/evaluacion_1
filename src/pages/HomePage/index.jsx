@@ -15,13 +15,18 @@ const HomePage = () => {
       <section className="hero-section">
         <div className="hero-content">
           <h1 className="hero-title">
-            <span className="hero-icon" aria-hidden="true">�</span>
             Cerámica para el día a día
           </h1>
           <p className="hero-body">
             Platos, tazas, macetas y más, hechos a mano con arcilla del Maule.
             Cada pieza está pensada para usarse, no solo para verse: resistente,
             funcional y con el carácter único que solo da el trabajo artesanal.
+          </p>
+          <p className="hero-body">
+            Trabajamos en pequeños lotes para cuidar cada detalle. Desde el
+            amasado de la arcilla hasta el esmaltado final, todo ocurre en
+            nuestro taller en el Maule, con materiales nacionales y sin
+            intermediarios.
           </p>
           <div className="hero-cta">
             <Button text="Comience Ahora" />
@@ -45,8 +50,13 @@ const HomePage = () => {
           <p className="feature-body">
             Cada taza, plato o maceta pasa por un proceso de modelado a mano,
             secado lento y cocción en horno de alta temperatura. El resultado es
-            una pieza gres de paredes firmes, apta para microondas y lavavajillas,
-            que mejora con el uso y el tiempo.
+            una pieza gres de paredes firmes, apta para microondas y lavavajillas.
+          </p>
+          <p className="feature-body">
+            No usamos moldes industriales ni procesos en serie. Cada pieza lleva
+            la huella de quien la hizo: pequeñas variaciones en el esmalte, en
+            el grosor, en la forma, que la hacen completamente única y le dan
+            un valor que ninguna cerámica de fábrica puede igualar.
           </p>
         </div>
 
@@ -79,7 +89,7 @@ const HomePage = () => {
 
       {/* ── SECCIÓN TESTIMONIOS ── */}
       <section className="testimonials-section">
-        <h2 className="testimonials-title">Lo que dicen nuestros clientes</h2>
+        <h2 className="testimonials-title">Nuestro equipo</h2>
         <div className="testimonials-grid">
           {testimonials.map((item) => (
             <CommentsCard

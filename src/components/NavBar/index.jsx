@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "../Button";
-import logo from "../../assets/condeceramicalogo.png"
+import logoIcon from "../../assets/CONDECERAMICA.png";
 import "./index.css";
 
 export const NavBar = () => {
@@ -10,10 +10,11 @@ export const NavBar = () => {
         
         <Link to="/" className="navbar-logo">
           <img 
-            src={logo}
-            alt="Logo" 
+            src={logoIcon}
+            alt="CondeCerámicas logo" 
             className="logo-img" 
           />
+          <span className="logo-name">CondeCerámicas</span>
         </Link>
 
         <div className="navbar-actions">

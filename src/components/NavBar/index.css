@@ -1,12 +1,12 @@
 /* --- 1. ESTILOS MOBILE (Por defecto) --- */
 
 .navbar {
-  background-color: #D1E3FF;
+  background-color: #967251;
   height: 70px;
   display: flex;
   align-items: center;
   width: 100%;
-  border-bottom: 2px solid #b8c9e8;
+  border-bottom: 2px solid #8B5E3C;
 }
 
 .navbar-container {
@@ -17,10 +17,25 @@
   padding: 0 20px;
 }
 
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
 .logo-img {
   height: 45px;
   width: auto;
   display: block;
+}
+
+.logo-name {
+  font-family: 'Story Script', cursive;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #F5ECD7;
+  letter-spacing: 0.02em;
 }
 
 .navbar-actions {
@@ -47,9 +62,9 @@
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    color: #333;
-    background-color: #ffffff;
-    border: 1px solid #999;
+    color: #5C3D1E;
+    background-color: #F5ECD7;
+    border: 1px solid #C4956A;
     border-radius: 6px;
     padding: 0 24px;
     height: 38px;
@@ -59,10 +74,14 @@
   }
 
   .btn-ventas:hover {
-    background-color: #f0f0f0;
+    background-color: #E8D5B0;
   }
 
   .logo-img {
     height: 55px;
+  }
+
+  .logo-name {
+    font-size: 1.8rem;
   }
 }

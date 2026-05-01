@@ -1,6 +1,6 @@
 .value-card {
-  background: #ffffff;
-  border: 1px solid #e0e0e0;
+  background: #FDF6EC;
+  border: 1px solid #C4956A;
   border-radius: 12px;
   padding: 28px 24px;
   display: flex;
@@ -8,14 +8,13 @@
   align-items: center;
   text-align: center;
   gap: 12px;
-  /* Sombra de caja */
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 16px rgba(92, 61, 30, 0.08);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .value-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.13);
+  box-shadow: 0 10px 28px rgba(92, 61, 30, 0.15);
 }
 
 .value-card__icon {
@@ -37,12 +36,13 @@
 .value-card__title {
   font-family: var(--font-title);
   font-size: 1.1rem;
-  color: #222;
+  color: #5C3D1E;
 }
 
 .value-card__description {
   font-family: var(--font-body);
   font-size: 0.9rem;
-  color: #666;
+  text-align: justify;
+  color: #6B4C2A;
   line-height: 1.65;
 }

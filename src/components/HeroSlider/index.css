@@ -51,6 +51,7 @@
   transform: translateX(-50%);
   display: flex;
   gap: 8px;
+  z-index: 10;
 }
 
 .slider__dot {
@@ -72,6 +73,6 @@
 /* Desktop: slide más alto */
 @media (min-width: 768px) {
   .slider__slide {
-    height: 340px;
+    height: 400px;
   }
 }

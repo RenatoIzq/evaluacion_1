@@ -10,13 +10,13 @@
   align-items: center;
   justify-content: center;
   padding: 48px 20px;
-  background-color: #f5f7fa;
+  background-color: #F5ECD7;
 }
 
 /* Tarjeta de perfil */
 .dev-card {
-  background: #ffffff;
-  border: 1px solid #e0e0e0;
+  background: #FDF6EC;
+  border: 1px solid #C4956A;
   border-radius: 16px;
   padding: 40px 32px;
   max-width: 480px;
@@ -25,9 +25,7 @@
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  /* Sombra de caja */
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-  /* Animación de entrada */
+  box-shadow: 0 8px 32px rgba(92, 61, 30, 0.12);
   animation: fadeSlideUp 0.5s ease both;
 }
 
@@ -42,16 +40,16 @@
   }
 }
 
-/* Avatar */
 .dev-avatar {
   width: 96px;
   height: 96px;
-  background-color: #eeeeee;
+  background-color: #E8D5B0;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 3px solid #d1e3ff;
+  border: 3px solid #C4956A;
+  overflow: hidden;
 }
 
 .dev-avatar svg {
@@ -59,11 +57,18 @@
   height: 56px;
 }
 
+.dev-avatar__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
 /* Nombre */
 .dev-name {
   font-family: var(--font-title);
   font-size: 1.6rem;
-  color: #222;
+  color: #5C3D1E;
   text-align: center;
 }
 
@@ -73,8 +78,8 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-  border-top: 1px solid #eee;
-  border-bottom: 1px solid #eee;
+  border-top: 1px solid #C4956A;
+  border-bottom: 1px solid #C4956A;
   padding: 16px 0;
 }
 
@@ -89,7 +94,7 @@
   font-family: var(--font-body);
   font-size: 0.82rem;
   font-weight: 600;
-  color: #888;
+  color: #8B5E3C;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   flex-shrink: 0;
@@ -98,41 +103,59 @@
 .dev-info__value {
   font-family: var(--font-body);
   font-size: 0.95rem;
-  color: #333;
+  font-weight: 700;
+  color: #5C3D1E;
   text-align: right;
 }
 
 .dev-info__link {
   font-family: var(--font-body);
   font-size: 0.95rem;
-  color: #4a90e2;
+  font-weight: 700;
+  color: #8B5E3C;
   text-decoration: underline;
   text-align: right;
 }
 
-
-/* Botón GitHub */
-.dev-github-btn {
+/* Botones */
+.dev-github-btn,
+.dev-repo-btn {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background-color: #24292e;
-  color: #ffffff;
   text-decoration: none;
   padding: 10px 24px;
   border-radius: 8px;
   font-family: var(--font-body);
   font-size: 0.9rem;
-  font-weight: 600;
+  font-weight: 700;
+  width: 100%;
+  justify-content: center;
   transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
-.dev-github-btn svg {
-  width: 18px;
-  height: 18px;
+.dev-github-btn {
+  background-color: #5C3D1E;
+  color: #F5ECD7;
 }
 
 .dev-github-btn:hover {
-  background-color: #444d56;
+  background-color: #8B5E3C;
   transform: translateY(-2px);
+}
+
+.dev-repo-btn {
+  background-color: #C4956A;
+  color: #fff;
+}
+
+.dev-repo-btn:hover {
+  background-color: #8B5E3C;
+  transform: translateY(-2px);
+}
+
+.dev-github-btn svg,
+.dev-repo-btn svg {
+  width: 18px;
+  height: 18px;
 }

@@ -9,71 +9,55 @@
   min-height: 100vh;
 }
 
-/* ── Placeholder genérico de imagen ── */
-.image-placeholder {
-  background-color: #cccccc;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.image-placeholder::after {
-  content: "";
-  display: block;
-  width: 64px;
-  height: 64px;
-  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23aaa'%3E%3Cpath d='M21 19V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2zM8.5 13.5l2.5 3 3.5-4.5 4.5 6H5l3.5-4.5z'/%3E%3C/svg%3E") center/contain no-repeat;
-}
 
 /* =============================================
    HERO — Mobile
    ============================================= */
+
 .hero-section {
-  background-color: #fef9e7;
-  padding: 32px 20px;
+  background-color: #F5ECD7;
+  padding: 32px 20px 32px 20px;
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 30px;
 }
 
-/* En mobile el slider del hero está oculto (se usa el bloque separado) */
 .hero-slider-desktop {
   display: none;
 }
 
-/* Bloque gris con slider, solo visible en mobile */
 .hero-slider-mobile {
   display: block;
   width: 100%;
-  background-color: #e0e0e0;
+  background-color: #F5ECD7;
+  padding: 0px 20px 32px 20px;
+  gap: 30px;
 }
 
 .hero-content {
   display: flex;
   flex-direction: column;
-  gap: 16px;
 }
 
 .hero-title {
   font-family: var(--font-title);
   font-size: 1.6rem;
-  color: #222;
+  color: #5C3D1E;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
   text-align: center;
-}
-
-.hero-icon {
-  font-size: 1.8rem;
+  margin-bottom: 16px;
 }
 
 .hero-body {
   font-family: var(--font-body);
   font-size: 0.95rem;
-  color: #555;
+  text-align: justify;
+  color: #6B4C2A;
   line-height: 1.75;
+  margin-bottom: 12px;
 }
 
 .hero-cta {
@@ -82,16 +66,12 @@
   justify-content: center;
 }
 
-/* Imagen full-width entre hero y feature — reemplazada por hero-slider-mobile */
-.mobile-hero-image {
-  display: none;
-}
 
 /* =============================================
    FEATURE — Mobile
    ============================================= */
 .feature-section {
-  background-color: #e8f5e9;
+  background-color: #EDE0C8;
   padding: 32px 20px;
   display: flex;
   flex-direction: column;
@@ -101,7 +81,7 @@
 .feature-title {
   font-family: var(--font-title);
   font-size: 1.2rem;
-  color: #222;
+  color: #5C3D1E;
   margin-bottom: 12px;
   line-height: 1.4;
   text-align: center;
@@ -110,8 +90,10 @@
 .feature-body {
   font-family: var(--font-body);
   font-size: 0.95rem;
-  color: #555;
+  text-align: justify;
+  color: #6B4C2A;
   line-height: 1.75;
+  margin-bottom: 12px;
 }
 
 .feature-image-wrap {
@@ -123,7 +105,7 @@
 
 .feature-image {
   width: 100%;
-  height: 200px;
+  height: 320px;
   border-radius: 8px;
   object-fit: cover;
   /* Sombra en caja de imagen */
@@ -134,7 +116,7 @@
   display: flex;
   gap: 4px;
   font-size: 1.4rem;
-  color: #f5a623;
+  color: #C4956A;
 }
 
 /* =============================================
@@ -142,7 +124,7 @@
    ============================================= */
 .values-section {
   padding: 40px 20px;
-  background-color: #f5f7fa;
+  background-color: #F5ECD7;
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -151,7 +133,7 @@
 .values-title {
   font-family: var(--font-title);
   font-size: 1.4rem;
-  color: #222;
+  color: #5C3D1E;
   text-align: center;
 }
 
@@ -166,7 +148,7 @@
    ============================================= */
 .testimonials-section {
   padding: 40px 20px;
-  background-color: #ffffff;
+  background-color: #F0E6D3;
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -175,7 +157,7 @@
 .testimonials-title {
   font-family: var(--font-title);
   font-size: 1.4rem;
-  color: #222;
+  color: #5C3D1E;
   text-align: center;
 }
 
@@ -203,6 +185,7 @@
     display: flex;
     flex: 1;
     order: -1;
+    padding: 32px 0 32px 32px;
   }
 
   .hero-slider-desktop > * {
@@ -260,7 +243,7 @@
   }
 
   .feature-image {
-    height: 260px;
+    height: 400px;
   }
 
   /* ── Propuestas de valor ── */

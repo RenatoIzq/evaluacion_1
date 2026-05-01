@@ -1,7 +1,7 @@
 .footer {
   padding: 32px 20px 24px;
-  background-color: #ffffff;
-  border-top: 1px solid #eaeaea;
+  background-color: #967251;
+  border-top: 2px solid #8B5E3C;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,7 +24,7 @@
 }
 
 .footer-socials a {
-  color: #444;
+  color: #F5ECD7;
   display: flex;
   align-items: center;
   transition: opacity 0.2s, transform 0.2s;
@@ -42,7 +42,7 @@
 }
 
 .footer-dev-link {
-  color: #4a90e2;
+  color: #E8D5B0;
   text-decoration: underline;
   font-family: var(--font-body);
   font-size: 0.9rem;
@@ -52,7 +52,7 @@
 .footer-location {
   font-family: var(--font-body);
   font-size: 0.88rem;
-  color: #888;
+  color: #E8D5B0;
   text-align: center;
 }
 
