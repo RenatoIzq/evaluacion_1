@@ -1,4 +1,4 @@
-/* --- 1. ESTILOS MOBILE (Por defecto) --- */
+/* Mobile */
 
 .navbar {
   background-color: #967251;
@@ -44,19 +44,16 @@
   align-items: center;
 }
 
-/* OCULTAR VENTAS EN MOBILE */
 .btn-ventas {
   display: none;
 }
 
-/* --- 2. ESTILOS DESKTOP (min-width: 768px) --- */
-
+/* Desktop */
 @media (min-width: 768px) {
   .navbar-container {
     padding: 0 10%;
   }
 
-  /* MOSTRAR VENTAS SOLO EN WEB */
   .btn-ventas {
     display: inline-flex;
     align-items: center;

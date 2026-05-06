@@ -2,7 +2,6 @@ import ceramica from '../assets/icons/ceramica.png';
 import ceramicaManos from '../assets/icons/ceramica (1).png';
 import arcilla from '../assets/icons/elaboracion-de-arcilla.png';
 
-// ── Equipo de trabajo (CommentsCard) ──────────────────────────────────────
 export const testimonials = [
   {
     id: 1,
@@ -30,7 +29,6 @@ export const testimonials = [
   },
 ];
 
-// ── Desarrollador (DevelopPage) ────────────────────────────────────────────
 export const developerData = {
   name: "Renato Izquierdo Conde",
   career: "Ingeniería Civil en Informática",
@@ -41,6 +39,7 @@ export const developerData = {
   repoName: "evaluacion_1",
   avatar: "https://github.com/RenatoIzq.png",
 };
+
 export const valueProposals = [
   {
     id: 1,

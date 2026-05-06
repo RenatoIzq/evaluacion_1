@@ -12,14 +12,9 @@ const slides = [
   { id: 4, img: img4, label: "Set platos bajos azul" },
 ];
 
-/**
- * HeroSlider — Slide automático con transición CSS (transform/transition).
- * Sin librerías externas.
- */
 export const HeroSlider = () => {
   const [current, setCurrent] = useState(0);
 
-  // Avance automático cada 2.5 s
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrent((prev) => (prev + 1) % slides.length);
@@ -31,27 +26,18 @@ export const HeroSlider = () => {
 
   return (
     <div className="slider" aria-label="Galería de colecciones">
-      {/* Track que se desplaza con transform */}
       <div
         className="slider__track"
         style={{ transform: `translateX(-${current * 100}%)` }}
       >
         {slides.map((slide) => (
-          <div
-            key={slide.id}
-            className="slider__slide"
-          >
-            <img
-              src={slide.img}
-              alt={slide.label}
-              className="slider__img"
-            />
+          <div key={slide.id} className="slider__slide">
+            <img src={slide.img} alt={slide.label} className="slider__img" />
             <span className="slider__label">{slide.label}</span>
           </div>
         ))}
       </div>
 
-      {/* Dots de navegación */}
       <div className="slider__dots" role="tablist" aria-label="Seleccionar slide">
         {slides.map((_, i) => (
           <button

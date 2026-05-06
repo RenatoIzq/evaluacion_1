@@ -1,6 +1,4 @@
-/* =============================================
-   HOME PAGE — Mobile First
-   ============================================= */
+/* Mobile */
 
 .home-wrapper {
   display: flex;
@@ -8,11 +6,6 @@
   width: 100%;
   min-height: 100vh;
 }
-
-
-/* =============================================
-   HERO — Mobile
-   ============================================= */
 
 .hero-section {
   background-color: #F5ECD7;
@@ -66,10 +59,6 @@
   justify-content: center;
 }
 
-
-/* =============================================
-   FEATURE — Mobile
-   ============================================= */
 .feature-section {
   background-color: #EDE0C8;
   padding: 32px 20px;
@@ -108,7 +97,6 @@
   height: 320px;
   border-radius: 8px;
   object-fit: cover;
-  /* Sombra en caja de imagen */
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
 }
 
@@ -119,9 +107,6 @@
   color: #C4956A;
 }
 
-/* =============================================
-   PROPUESTAS DE VALOR — Mobile
-   ============================================= */
 .values-section {
   padding: 40px 20px;
   background-color: #F5ECD7;
@@ -143,9 +128,6 @@
   gap: 16px;
 }
 
-/* =============================================
-   TESTIMONIOS — Mobile
-   ============================================= */
 .testimonials-section {
   padding: 40px 20px;
   background-color: #F0E6D3;
@@ -167,12 +149,9 @@
   gap: 16px;
 }
 
-/* =============================================
-   DESKTOP — min-width: 768px
-   ============================================= */
+/* Desktop */
 @media (min-width: 768px) {
 
-  /* ── Hero ── */
   .hero-section {
     flex-direction: row;
     align-items: stretch;
@@ -180,7 +159,6 @@
     min-height: 380px;
   }
 
-  /* Slider aparece dentro del hero como columna izquierda */
   .hero-slider-desktop {
     display: flex;
     flex: 1;
@@ -194,7 +172,6 @@
     box-shadow: none;
   }
 
-  /* Slider mobile se oculta en desktop */
   .hero-slider-mobile {
     display: none;
   }
@@ -208,14 +185,12 @@
   .hero-title {
     font-size: 2rem;
     justify-content: flex-start;
-    
   }
 
   .hero-cta {
     justify-content: flex-start;
   }
 
-  /* ── Feature ── */
   .feature-section {
     flex-direction: row;
     align-items: stretch;
@@ -246,7 +221,6 @@
     height: 400px;
   }
 
-  /* ── Propuestas de valor ── */
   .values-section {
     padding: 56px 5%;
   }
@@ -260,7 +234,6 @@
     flex: 1;
   }
 
-  /* ── Testimonios ── */
   .testimonials-section {
     padding: 56px 5%;
   }

@@ -72,7 +72,6 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* ── SECCIÓN PROPUESTAS DE VALOR ── */}
       <section className="values-section">
         <h2 className="values-title">¿Por qué elegirnos?</h2>
         <div className="values-grid">
@@ -87,7 +86,6 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* ── SECCIÓN TESTIMONIOS ── */}
       <section className="testimonials-section">
         <h2 className="testimonials-title">Nuestro equipo</h2>
         <div className="testimonials-grid">
