@@ -1,16 +1,48 @@
-# React + Vite
+# CondeCerámicas
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Sitio web de presentación para **CondeCerámicas**, taller artesanal de cerámica ubicado en Talca, Chile.
 
-Currently, two official plugins are available:
+🔗 **Demo en vivo:** [evaluacion-1-beta.vercel.app](https://evaluacion-1-beta.vercel.app)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## Descripción
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Landing page que presenta la marca, sus productos y el equipo de trabajo. Incluye un slider de imágenes, sección de propuestas de valor, equipo y página de desarrollador.
 
-## Expanding the ESLint configuration
+## Páginas
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+| Ruta | Descripción |
+|---|---|
+| `/` | Home — hero, feature, valores y equipo |
+| `/ventas` | Tienda en línea (próximamente) |
+| `/develop` | Perfil del desarrollador |
+
+## Tecnologías
+
+- React
+- React Router DOM
+- Vite
+- CSS puro (mobile first)
+
+## Estructura
+
+```
+src/
+├── assets/          # Imágenes e íconos
+├── components/      # NavBar, Footer, Button, HeroSlider, ValueCard, CommentsCard
+├── data/            # dummy.js — datos de la app
+└── pages/           # HomePage, Ventas, Develop
+```
+
+## Instalación local
+
+```bash
+npm install
+npm run dev
+```
+
+## Desarrollador
+
+**Renato Izquierdo Conde** — Ingeniería Civil en Informática, Talca  
+GitHub: [github.com/RenatoIzq](https://github.com/RenatoIzq)
