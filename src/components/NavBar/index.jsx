@@ -1,9 +1,11 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Button } from "../Button";
 import logoIcon from "../../assets/CONDECERAMICA.png";
 import "./index.css";
 
 export const NavBar = () => {
+  const navigate = useNavigate();
+
   return (
     <nav className="navbar">
       <div className="navbar-container">
@@ -21,7 +23,7 @@ export const NavBar = () => {
           <Link to="/ventas" className="btn-ventas">
             Ventas
           </Link>
-          <Button text="Comience Ahora" />
+          <Button text="Contáctanos" onClick={() => navigate('/contacto')} />
         </div>
       </div>
     </nav>
