@@ -1,0 +1,93 @@
+/* Mobile */
+
+.contacto-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.contacto-main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 20px;
+  background-color: #F5ECD7;
+}
+
+.contacto-card {
+  background: #FDF6EC;
+  border: 1px solid #C4956A;
+  border-radius: 16px;
+  padding: 48px 32px;
+  max-width: 480px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(92, 61, 30, 0.12);
+  animation: fadeSlideUp 0.5s ease both;
+}
+
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.contacto-icon {
+  font-size: 3.5rem;
+  line-height: 1;
+}
+
+.contacto-title {
+  font-family: var(--font-title);
+  font-size: 1.8rem;
+  color: #5C3D1E;
+}
+
+.contacto-body {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: #6B4C2A;
+  line-height: 1.75;
+}
+
+.contacto-back {
+  margin-top: 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background-color: #5C3D1E;
+  color: #F5ECD7;
+  text-decoration: none;
+  padding: 10px 28px;
+  border-radius: 8px;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.contacto-back:hover {
+  background-color: #8B5E3C;
+  transform: translateY(-2px);
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+  .contacto-card {
+    padding: 56px 48px;
+  }
+
+  .contacto-title {
+    font-size: 2.2rem;
+  }
+}
