@@ -101,7 +101,7 @@
 }
 
 .feature-stars {
-  display: flex;
+  display: none;
   gap: 4px;
   font-size: 1.4rem;
   color: #C4956A;
@@ -219,6 +219,10 @@
 
   .feature-image {
     height: 400px;
+  }
+
+  .feature-stars {
+    display: flex;
   }
 
   .values-section {
